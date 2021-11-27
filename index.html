@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+<style>
+  body {
+    background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  }
+    /* unvisited link */
+    a:link {
+      color: red;
+    }
+    
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+    
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    } 
+    /* selected link */
+    a:active {
+      color: blue;
+    }
+    table, th, td {
+  border:2px solid black;
+}
+p.khan{
+  background-color: lightgreen;
+}
+h1{
+  color:#B22222;
+}
+.khan{
+  border-style: solid;
+  border-color:#B22222 ;
+}
+h2{
+  color: crimson;
+}
+div.sh{
+  text-align: center;
+}
+p.b:hover, h1:hover, a:hover {
+  background-color: yellow;
+}
+h4.a {
+  visibility: visible;
+}
+
+h5.b {
+  visibility: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+  width: 100%;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  width: 100%;
+  background-color: yellow;
+}
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+#example4 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+}
+
+#example5 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: padding-box;
+}
+
+#example6 {
+  border: 10px dotted black;
+  padding: 35px;
+  background: yellow;
+  background-clip: content-box;
+}
+div.sk{
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px 12px grey;
+}
+#example7 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  margin: 20px;
+}
+
+#example8 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  margin: 20px;
+}
+div.sh1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+div.sh2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+div.sh3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination1 {
+  display: inline-block;
+}
+
+.pagination1 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination1 a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination1 a:hover:not(.active) {background-color: #ddd;}
+.pagination2 {
+  display: inline-block;
+}
+
+.pagination2 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  font-size: 22px;
+}
+
+.pagination2 a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination2 a:hover:not(.active) {background-color: #ddd;}
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.relative1 {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute1 {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: visible;
+}
+div.ch {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: hidden;
+}
+div.ch1 {
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  border: 1px dotted black;
+  overflow: scroll;
+}
+div.ch2 {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: auto;
+}
+div.ch3 {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+div {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+}
+
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.second {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+} 
+
+th,td {
+  border: 1px solid black;
+}
+
+table.ab {
+  table-layout: auto;
+  width: 180px;  
+}
+
+table.bc {
+  table-layout: fixed;
+  width: 180px;  
+}
+
+table.cd {
+  table-layout: auto;
+  width: 100%;  
+}
+
+table.de {
+  table-layout: fixed;
+  width: 100%;  
+}
+#example11 {
+  border: 10px dotted green;
+  padding: 15px;
+  background: lightblue;
+  background-clip: border-box;  
+}
+
+#example12 {
+  border: 10px dotted green;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+#example13 {
+  border: 10px dotted green;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+ol.d {list-style-type: armenian;}
+ol.e {list-style-type: cjk-ideographic;}
+ol.f {list-style-type: decimal;}
+ol.g {list-style-type: decimal-leading-zero;}
+ol.h {list-style-type: georgian;}
+ol.i {list-style-type: hebrew;}
+ol.j {list-style-type: hiragana;}
+ol.k {list-style-type: hiragana-iroha;}
+ol.l {list-style-type: katakana;}
+ol.m {list-style-type: katakana-iroha;}
+ol.n {list-style-type: lower-alpha;}
+ol.o {list-style-type: lower-greek;}
+ol.p {list-style-type: lower-latin;}
+ol.q {list-style-type: lower-roman;}
+ol.r {list-style-type: upper-alpha;}
+ol.s {list-style-type: upper-greek;}
+ol.t {list-style-type: upper-latin;}
+ol.u {list-style-type: upper-roman;}
+ol.v {list-style-type: none;}
+ol.w {list-style-type: inherit;}
+ul {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+li { 
+  padding-left: 16px; 
+}
+
+li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="w3-container">
+     </div>
+    <div class="w3-bar w3-black" height=20px width=20px;>
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Contact Details</a>
+        <a href="#" class="w3-bar-item w3-button">History</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+    </div>
+    
+    <H1>Learning Platform</H1>
+    <img src="Busting-the-myths-about-e-learning.jpg" height="400px" widght="800px">
+    
+
+    
+    <P class="khan">Learning is the key to achieving a person's full potential. Human beings are uniquely adapted to learn and can learn throughout their lifespan.<br> For people, learning does not stop after high school, college or graduate school. People who continue to learn are able to transform their lives and become more successful at home,<br> more successful with their families, more successful at work and more successful within their local community.</P>
+    <i>1. Learning is Important in growing your income and status</i><br><br>
+    <b>2. Learning Plays a Role in Getting Access to New Opportunities</b>
+    <div class="sh">
+    <h2>Free Learning Platform Tutorials </h2>
+    <a href="https://www.javatpoint.com/">javatpoint.com</a><br>
+    <a href="https://www.w3schools.com/">w3schools.com</a><br>
+    <a href="https://www.tutorialspoint.com/index.htm">tutorialspoint.com</a><br>
+    <a href="https://www.geeksforgeeks.org/">geeksforgeeks.com</a><br>
+  </div>
+    <h1>What is the Importance of Learning (In Any Stage of Life)</h1>
+  
+    <ul>
+        <li>Learning is Important in growing your income and status</li>
+        <li>Learning Plays a Role in Getting Access to New Opportunities</li>
+        <li>Learning helps self-confidence</li>
+        <li> It Develops and helps your growth curve</li>
+        <li>Learning is Important in achieving your goals</li>
+        <li> Importance of learning in making you happy</li>
+        <li>Importance of learning for personal development</li>
+        <li>Importance of learning for professional development</li>
+        <li>Learning is Important in acquiring leadership qualities</li>
+    </ul>
+    </div>
+    <h1> Effective Ways to Develop Learning Skills</h1>
+    <ol>
+        <li>Keep yourself prepared</li>
+        <li>Be organized</li>
+        <li>Be punctual</li>
+        <li>Keep a notebook handy</li>
+        <li>Establish your learning style</li>
+        <li>Clear your doubts is a good learning skills</li>
+        <li>Complete the assignments</li>
+        <li>Create a perfect study place</li>
+        <li>Develop a schedule</li>
+        <li>Start with the harder things</li>
+ </ol>
+ </div>
+ <img src="o-COLLEGE-STUDENTS-ON-CAMPUS-facebook.jpg" height="400px" widght="800px">
+ <img src="istockphoto-1079655830-1024x1024.jpg" height="400px" widght="800px">
+ <h2>Web Design</h2>
+ 
+<form action="/action_page.php">
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><br>
+    <input type="radio" id="Angualr" name="fav_language" value="Angular">
+      <label for="Angular">Angualar</label><br>
+    <input type="radio" id="React" name="fav_language" value="React">
+      <label for="React">React</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <hr style="height:2px;border-width:20;color:gray;background-color:lightblue">
+    <h1>The blockquote element</h1>
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+    <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:green;font-weight:bold">dark green</span> eyes.</p>
+    <h2>Styling a link depending on state</h2>
+
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    <form action="#" name="StudentRegistration" onSubmit="return(validate());">
+
+        <table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+        
+          cellspacing="2">
+        
+        
+        <tr>
+        
+          <td colspan=2>
+        
+          <center><font size=4><b>Student Registration Form</b></font></center>
+        
+          </td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>Name</td>
+        
+          <td><input type=text name=textnames id="textname" size="30"></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>Father Name</td>
+        
+          <td><input type="text" name="fathername" id="fathername"
+        
+          size="30"></td>
+        
+          </tr>
+        
+          <tr>
+        
+          <td>Postal Address</td>
+        
+          <td><input type="text" name="paddress" id="paddress" size="30"></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>Personal Address</td>
+        
+          <td><input type="text" name="personaladdress"
+        
+          id="personaladdress" size="30"></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>Sex</td>
+        
+          <td><input type="radio" name="sex" value="male" size="10">Male
+        
+          <input type="radio" name="sex" value="Female" size="10">Female</td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>City</td>
+        
+          <td><select name="City">
+        
+          <option value="-1" selected>select..</option>
+        
+          <option value="New Delhi">NEW DELHI</option>
+        
+          <option value="Mumbai">MUMBAI</option>
+        
+          <option value="Goa">GOA</option>
+        
+          <option value="Patna">PATNA</option>
+        
+          </select></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>Course</td>
+        
+          <td><select name="Course">
+        
+          <option value="-1" selected>select..</option>
+        
+          <option value="B.Tech">B.TECH</option>
+        
+          <option value="MCA">MCA</option>
+        
+          <option value="MBA">MBA</option>
+        
+          <option value="BCA">BCA</option>
+        
+          </select></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>District</td>
+        
+          <td><select name="District">
+        
+          <option value="-1" selected>select..</option>
+        
+          <option value="Nalanda">NALANDA</option>
+        
+          <option value="UP">UP</option>
+        
+          <option value="Goa">GOA</option>
+        
+          <option value="Patna">PATNA</option>
+        
+          </select></td>
+        
+        
+        </tr>
+        
+        
+        <tr>
+        
+          <td>State</td>
+        
+          <td><select Name="State">
+        
+          <option value="-1" selected>select..</option>
+        
+          <option value="New Delhi">NEW DELHI</option>
+        
+          <option value="Mumbai">MUMBAI</option>
+        
+          <option value="Goa">GOA</option>
+        
+          <option value="Bihar">BIHAR</option>
+        
+          </select></td>
+        
+          </tr>
+        
+          <tr>
+        
+          <td>PinCode</td>
+        
+          <td><input type="text" name="pincode" id="pincode" size="30"></td>
+        
+        
+        </tr>
+        
+          <tr>
+        
+          <td>EmailId</td>
+        
+          <td><input type="text" name="emailid" id="emailid" size="30"></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>DOB</td>
+        
+          <td><input type="text" name="dob" id="dob" size="30"></td>
+        
+          </tr>
+        
+        
+        <tr>
+        
+          <td>MobileNo</td>
+        
+          <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+        
+          </tr>
+        
+          <tr>
+        
+          <td><input type="reset"></td>
+        
+          <td colspan="2"><input type="submit" value="Submit Form" /></td>
+        
+          </tr>
+        
+          </table>
+        
+          </form>
+          <h2>Get the live time </h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+          <h2>Select Time </h2>
+          <form>s
+            <label for="mytime">Select Time:</label>
+            <input type="time" id="mytime">
+            <button type="button" onclick="getValue();">Get Value</button>
+        </form>   
+        <h2>Select date</h2>
+        <form>
+            <label for="myweek">Select Week:</label>
+            <input type="week" id="myweek">
+            <button type="button" onclick="getValue();">Get Value</button>
+        </form>
+        <div class="container py-5">  
+            <h4><span class="text-danger">color</span> input type in html 5</h4>  
+            <form>  
+                <div class="form-group">  
+                    <label>Color:</label>  
+                    <input type="color" id="color"/>  
+                </div>  
+            </form>    
+        </div>   
+        <div class="container py-5">  
+            <h4><span class="text-danger">url</span> input type in html 5</h4>  
+            <form>  
+                <div class="form-group">  
+                    <label>EmailId:</label>  
+                    <input type="url" id="url" pattern="https?://.+" class="form-control col-md-3" required/>  
+                </div>  
+                <button class="btn-primary rounded-0">Submitt</button>  
+            </form>    
+        </div>   
+        <h2>Student Login Form</h2>
+        <P>User Name:<input type="text" placeholder="username@gmail.com"  ></P>
+            <p>PassWord:<input type="number" placeholder="enter correct password" ></p>
+            <center> 
+                <h1>GeeksForGeeks</h1> 
+          
+                <h2>HTML Target Attribute</h2> 
+          
+                <p>Welcome to 
+                    <a href="https://ide.geeksforgeeks.org/"
+                            id="GFG" target="_self"> 
+                        GeeksforGeeks 
+                    </a> 
+                </p> 
+            </center> 
+            <h1>The iframe element</h1>
+<iframe src="https://www.javatpoint.com/" title="javatpoint Free Online Web Tutorials" height="400px" width="600px">
+</iframe>
+<iframe src="https://www.javatpoint.com/" title="javatpoint Free Online Web Tutorials" height="400px" width="600px">
+</iframe>
+
+<marquee width="60%" direction="right" height="100px" id="khan">
+               This is a sample web page design.
+                </marquee>
+ <marquee width="60%" direction="right" height="100px" id="khan">
+                <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+                <p><a href="https://www.javatpoint.com" target="iframe_a">javatpoint.com</a></p>
+            </marquee>
+            <h3>Sematic elements used int html</h3>
+            <section>
+                <h1>WWF</h1>
+                <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+              </section>
+              
+              <section>
+                <h1>WWF's Panda symbol</h1>
+                <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+              </section>
+              <article>
+                <h2>Google Chrome</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+              </article>
+              
+              <article>
+                <h2>Mozilla Firefox</h2>
+                <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+              </article>
+              
+              <article>
+                <h2>Microsoft Edge</h2>
+                <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+            </article>
+<h3>A set of navigation links:</h3>    
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/java/">Java</a> |
+    <a href="/python/">python</a>
+  </nav>
+  <h3>Display some content aside from the content it is placed in:</h3>
+<aside>
+    <h4>Epcot Center</h4>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </aside>
+  <h2>HTML Table</h2>
+<h4>HTML tables allow web developers to arrange data into rows and columns.</h4>
+  <table id="h">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td> 
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
+  </table>
+  <h2>Tips on How to Start a New Career</h2>
+  <pre class="khan">Know what you do best. Make a list of what you enjoy doing and what you do best. They are usually the same things. ...
+    List your training and experience. Volunteering counts. Unusual classes count. If you know a little bit about a lot of things, list them all.
+    Now think about jobs. What occupations require your talents? Search the Internet. Try terms in such as job skills, career skills, skills assessment, and whatever else comes to mind.
+    Narrow the list to a few possible careers — no more than three or four. ...
+    Learn all you can about your chosen new career. Search the Internet. Visit your local library. Reference librarians are terrific at helping you find information. ...
+    Changing your mind? That’s fine, just go back to step 3 or 4 and start over. It will be worth the time in the long run. ...
+    Keep your old job if possible. Strange but true: you are more likely to be hired if you are already employed. ...
+    Do you need more training? Check out vocational schools and colleges in your area. Learn about specific training and what job placement services they offer. ...
+    Join a union or professional organization. There are organizations for people in just about any career. One more Internet search can lead you to local or national groups.
+    When you have the skills and training you need, polish your resume and start your job search.</pre>
+    <h1>Welcome to My Homepage</h1>
+
+<div class="intro">
+  <h2 id="firstname">My name is Donald</h2>
+  <p id="hometown">I live in Duckburg</p>
+  <p>My <b>best</b> friend is Mickey</p>
+</div>
+
+<h2>Links:</h2>
+<p class="b">Here are my favorite websites:</p>
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+<p><b>Note:</b> Mouse over paragraphs, headers, and links to see what is getting a style.</p>
+<p><b>Note:</b> For :hover to work for other than links in IE, a DOCTYPE must be declared.</p>
+<h1>The visibility Property</h1>
+
+<h4 class="a">This heading is visible</h2>
+
+<h5 class="b">This heading is hidden</h2>
+
+<p>Notice that the hidden heading still takes up space on the page.</p>
+
+<h1>Smooth Scroll</h1>
+
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+<h2>Use of margin: auto</h2>
+<p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+
+<div>
+This div will be horizontally centered because it has margin: auto;
+</div>
+
+<h1>The background-clip Property</h1>
+<h1>The background-clip Property</h1>
+
+<p>The background-clip property defines how far the background should extend within an element.</p>
+
+<p>background-clip: border-box (this is default):</p>
+<div id="example11">
+  <p>The background extends behind the border.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example12">
+  <p>The background extends to the inside edge of the border.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example13">
+  <p>The background extends to the edge of the content box.</p>
+</div>
+
+
+<p>No background-clip (border-box is default):</p>
+<div id="example4">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example5">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example6">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+<h2>CSS box-shadow Property</h2>
+<p>>The CSS box-shadow property is used to apply one or more shadows to an element.</p>
+<div class="sk">A div element with a blurred, grey box-shadow, with a spread radius of 12px.</div>
+<h1>Multiple Shadows</h1>
+
+<div id="example7">
+  <h2>Multiple shadows</h2>
+  <p>box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green:</p>
+</div>
+<br>
+
+<div id="example8">
+  <h2>Multiple shadows with blur effect</h2>
+  <p>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</p>
+</div>
+<h1>CSS Animation</h1>
+
+<div class="sh1"></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<h1>CSS Animation</h1>
+
+<p>This example uses the shorthand animation property:</p>
+
+<div class="sh2"></div>
+<h1>CSS Animation</h1><br><br><br><br><br><br>
+
+<p>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</p>
+
+<div class="sh3"></div>
+<h2>Active and Hoverable Pagination</h2><br><br><br>
+
+<p>Move the mouse over the numbers.</p>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div><br><br><br>
+
+<h2>Pagination with Margins</h2>
+
+<div class="pagination1">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+<h2>Pagination Size</h2>
+
+<p>Change the font-size property to make the pagination smaller or bigger.</p>
+
+<div class="pagination2">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+This div element has position: static;
+</div>
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative1">This div element has position: relative;
+  <div class="absolute1">This div element has position: absolute;</div>
+</div>
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<h2>Overflow: visible</h2>
+
+<p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+<h2>Overflow: hidden</h2>
+
+<p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+<p>Try to remove the overflow property to understand how it works.</p>
+
+<div class="ch">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+
+<h2>Overflow: scroll</h2>
+
+<p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+
+<div class="ch1">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>Overflow: auto</h2>
+
+<p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+<div class="ch2">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>Overflow-x and overflow-y</h2>
+
+<p>You can also change the overflow of content horizontally or vertically.</p>
+<p>overflow-x specifies what to do with the left/right edges of the content.</p>
+<p>overflow-y specifies what to do with the top/bottom edges of the content.</p>
+
+<div class="ch3">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h1>Transparent Box</h1>
+<p>With opacity:</p>
+<div style="opacity:0.1;"><p>10% opacity</p></div>
+<div style="opacity:0.3;"><p>30% opacity</p></div>
+<div style="opacity:0.6;"><p>60% opacity</p></div>
+<div><p>opacity 1</p></div>
+
+<p>With RGBA color values:</p>
+<div class="first"><p>10% opacity</p></div>
+<div class="second"><p>30% opacity</p></div>
+<div class="third"><p>60% opacity</p></div>
+<div><p>default</p></div>
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+<h1>The table-layout Property</h1>
+<table class=""ab>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: fixed; width: 180px:</h2>
+<table class="bc">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: auto; width: 100%:</h2>
+<table class="ca">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: fixed; width: 100%:</h2>
+<table class="de">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table><br>,br>,br>
+
+<h1>The list-style-type Property</h1>
+
+<ul class="a">
+  <li>Circle type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Disc type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="c">
+  <li>Square type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ol class="d">
+  <li>Armenian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="e">
+  <li>Cjk-ideographic type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="f">
+  <li>Decimal type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="g">
+  <li>Decimal-leading-zero type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="h">
+  <li>Georgian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="i">
+  <li>Hebrew type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="j">
+  <li>Hiragana type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="k">
+  <li>Hiragana-iroha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="l">
+  <li>Katakana type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="m">
+  <li>Katakana-iroha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="n">
+  <li>Lower-alpha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="o">
+  <li>Lower-greek type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="p">
+  <li>Lower-latin type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="q">
+  <li>Lower-roman type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="r">
+  <li>Upper-alpha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="s">
+  <li>Upper-greek type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="t">
+  <li>Upper-latin type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="u">
+  <li>Upper-roman type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="v">
+  <li>None type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="w">
+  <li>inherit type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol><br><br><br>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container1">
+  <div class="grid-item1">1</div>
+  <div class="grid-item1">2</div>
+  <div class="grid-item1">3</div>  
+  <div class="grid-item1">4</div>
+  <div class="grid-item1">5</div>
+  <div class="grid-item1">6</div>  
+  <div class="grid-item1">7</div>
+  <div class="grid-item1">8</div>
+  <div class="grid-item1">9</div>  
+</div><br><br><br><br><br>
+
+<h1>Grid Lines</h1>
+<div class="grid-container2">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+</div><br><br><br><br>
+
+</div>
+</body>
+</html>
