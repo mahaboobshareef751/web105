@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        body {
+           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .result {
+           font-size: 18px;
+           font-weight: 500;
+           color: blueviolet;
+        }
+     </style>
+</head>
+<body>
+    <h1>welcome to my javascript tutorial</h1>
+    <div class="container">
+        <button id="click">click</button>
+    </div>
+    <div class="container">
+        <P>this is my page</P>
+    </div>
+    <h1 id="myH"></h1>
+<p id="myP"></p>
+
+<h2>JavaScript Array Sort</h2>
+<p>The sort() method sorts an array alphabetically:</p>
+<script src="khan.js">
+
+// 1.way to print javascript
+/*console.log("hello world");
+alert("hello world");
+document.write("this is document write");
+
+//2.javascript console API
+console.log("hello shareefkhan");
+console.warn("this is warning");
+console.error("this is an error");
+alert("ya i know your name shareefkhan");
+
+//javascript variable declarations
+//3.what are variables?-containers to store values */
+var number1 = 43;
+var number2 = 66;
+console.log(number1 + number2);
+//alert(number1 + number2);
+/*--------------*/
+</script>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<button onclick="myFunction()">Click me</button>
+
+<script>
+/*--------------*/
+// sort the given data  array in decending order
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+function myFunction (){
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+  }
+  </script>
+</script><br><br>
+<h2>JavaScript For Loop</h2>
+
+<p id="demo3"></p>
+<script>
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i, len, text;
+    for (i = 0, len = cars.length, text = ""; i < len; i++) {
+      text += cars[i] + "<br>";
+    }
+    document.getElementById("demo3").innerHTML = text;
+    </script><br><br><br>
+    <body>
+
+        <h2>JavaScript Objects</h2>
+        <p>Creating an object:</p>
+        
+        <p id="demo4"></p>
+    
+<script>
+    const person = {
+      firstName : "shareef",
+      lastName  : "khan",
+      age     : 50,
+      eyeColor  : "blue"
+    };
+    
+    document.getElementById("demo4").innerHTML = person.firstName + " " + person.lastName;
+    </script><br><br><br>
+    <P>declare the Initialize-variable</P>
+    <script>
+// Declare
+var strNumber; 
+// Initialize
+strNumber = '16';
+// Use
+parseInt(strNumber); // => 16   
+    </script>
+    <p>"use strict" in a function will only cause errors in that function.</p>
+
+    <p>Activate debugging in your browser (F12) to see the error report.</p>
+    
+    <script>
+    x = 3.14;    // This will not cause an error.
+    myFunction();
+    
+    function myFunction() {
+      "use strict";
+      y = 3.14;  // This will cause an error (y is not defined).
+    }
+    </script>
+    <p>!-----------------------</p>
+    <p>Write program using this keyword when we click on button, it should be disappear</p>
+    <p id='demo' style='display: none'>Hello Javascript</p>     
+    <button type='button' onclick="toggleText()">Click me</button>
+    <script>
+function toggleText() {
+  var text = document.getElementById("demo");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+    </script>
+    <h1>Invoking functions with call() and apply()</h1>
+    <div class="result"></div>
+    <br />
+    <button class="Btn">Click Here</button>
+    <h3>Click on the above buttons to invoke functions with call() and apply()
+    method</h3>
+    <script>
+       let resEle = document.querySelector(".result");
+       let BtnEle = document.querySelector(".Btn");
+       function addNum(num1, num2, num3, num4) {
+          return num1 + num2 + num3 + num4;
+       }
+       function multiplyNum(num1, num2, num3, num4) {
+          return num1 * num2 * num3 * num4;
+       }
+       let arr = [22, 33, 44, 55];
+       BtnEle.addEventListener("click", () => {
+          resEle.innerHTML = "Sum of the numbers = " + addNum.call(this, 22, 33, 44, 55) + "<br>";
+          resEle.innerHTML +="Multiplication of the array elements = " +multiplyNum.apply(this, arr) +"<br>";
+       });
+    </script>
+     <h1 style="color: green;">
+        GeeksforGeeks
+    </h1>
+  
+    <h4>
+        How to count the number of 
+        times a button is clicked?
+    </h4>
+  
+    <button id="btn">Click Here!</button>
+  
+    <p>
+        Button Clicked <span 
+        id="display">0</span> Times
+    </p>
+  
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+    </script><br><br>
+    <h2>JavaScript Getters and Setters</h2>
+
+    <p>Getters and setters allow you to get and set object properties via methods.</p>
+    
+    <p>This example uses a lang property to get the value of the language property:</p>
+    
+    <p id="demo5"></p>
+    
+    <script>
+    // Create an object:
+    const person = {
+      firstName: "shareef",
+      lastName: "khan",
+      language: "urdu",
+      get lang() {
+        return this.lastName;
+      }
+    };
+    
+    // Display data from the object using a getter:
+    document.getElementById("demo5").innerHTML = person.lastName;
+    </script><br><br><br>
+    <h2>JavaScript Objects</h2>
+
+    <p>Using an object constructor:</p>
+    
+    <p id="demo6"></p>
+    
+    <script>
+    function Person(first, last, age, eye) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = age;
+      this.eyeColor = eye;
+    }
+    
+    const myFather = new Person("John", "Doe", 50, "blue");
+    const myMother = new Person("Sally", "Rally", 48, "green");
+    
+    document.getElementById("demo6").innerHTML =
+    "My father is " + myFather.age + ". My mother is " + myMother.age; 
+    </script>
+    <h1><center>Javascript Event declaration</center></h1>
+    <h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo7"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("demo7").innerHTML = Date();
+}
+</script>
+<h2>Show the javascript validation. When you click submit, the text box doesn't need to 
+    be empty.</h2>
+<script>
+    function checkForm() {
+        if (!isEmpty(document.myForm.checkA.value)
+            && !isEmpty(document.myForm.checkB.value))
+            return true;
+        else
+            return false;
+    }
+    
+    function isEmpty(text) {
+        return text.length == 0 || !text.match(/[^\s]/)
+    }
+    
+    </script>
+    
+    <form name="myForm" onSubmit="return checkForm();">
+        <input name="textA" type="text" />
+        <input name="textB" type="text" />
+        <input type="submit" value="Submit!" />
+    </form>
+    <!---------------->
+    <h2>My First Web Page</h2>
+
+<p>Activate debugging in your browser (Chrome, IE, Firefox) with F12, and select "Console" in the debugger menu.</p>
+
+<script>
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+</script>
+<!----------------------->
+
+<h2>Looping JavaScript Object Values</h2>
+<p id="demo8"></p>
+
+<script>
+const myJSON = '{"name":"John", "age":30, "car":null}';
+const myObj = JSON.parse(myJSON);
+
+let text = "";
+for (const x in myObj) {
+  text += myObj[x] + ", ";
+}
+document.getElementById("demo8").innerHTML = text;
+</script>
+
+    
+</body>
+
+</html>
